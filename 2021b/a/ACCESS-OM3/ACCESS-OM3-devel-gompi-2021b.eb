@@ -1,0 +1,21 @@
+easyblock = 'BuildEnv'
+
+name = 'ACCESS-OM3'
+
+version = 'devel'
+
+homepage = 'None'
+
+description = """This module sets a group of environment variables for compilers, linkers, maths libraries, etc., required
+ to compile ACCESS-OM3."""
+
+toolchain = {'name': 'gompi', 'version': '2021b'}
+
+dependencies = [
+    ('CMake',          '3.21.1'),
+    ('netCDF-Fortran', '4.5.3'),
+    ('FMS',            '2022.02'),
+]
+
+moduleclass = 'devel'
+
