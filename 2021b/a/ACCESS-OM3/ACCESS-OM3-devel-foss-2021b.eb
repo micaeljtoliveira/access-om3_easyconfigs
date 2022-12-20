@@ -9,12 +9,14 @@ homepage = 'None'
 description = """This module sets a group of environment variables for compilers, linkers, maths libraries, etc., required
  to compile ACCESS-OM3."""
 
-toolchain = {'name': 'gompi', 'version': '2021b'}
+toolchain = {'name': 'foss', 'version': '2021b'}
+toolchainopts = {'usempi': True}
 
 dependencies = [
     ('CMake',          '3.21.1'),
     ('netCDF-Fortran', '4.5.3'),
     ('FMS',            '2022.02'),
+    ('ESMF',           '8.2.0'),
 ]
 
 moduleclass = 'devel'
