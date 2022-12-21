@@ -1,0 +1,23 @@
+easyblock = 'BuildEnv'
+
+name = 'ACCESS-OM3'
+
+version = 'devel'
+
+homepage = 'None'
+
+description = """This module sets a group of environment variables for compilers, linkers, maths libraries, etc., required
+ to compile ACCESS-OM3."""
+
+toolchain = {'name': 'intel', 'version': '2022a'}
+toolchainopts = {'usempi': True}
+
+dependencies = [
+    ('CMake',          '3.23.1'),
+    ('netCDF-Fortran', '4.6.0'),
+    ('FMS',            '2022.02'),
+    ('ESMF',           '8.3.0'),
+]
+
+moduleclass = 'devel'
+
