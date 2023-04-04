@@ -17,6 +17,7 @@ dependencies = [
     ('netCDF-Fortran', '4.6.0'),
     ('FMS',            '2022.02'),
     ('ESMF',           '8.3.0'),
+    ('ParallelIO',     '2.5.10'),
 ]
 
 moduleclass = 'devel'
